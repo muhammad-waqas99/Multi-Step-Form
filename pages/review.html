@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Review</title>
+        <link rel="stylesheet" href="../style.css">
 </head>
-  <body>
-    <nav>
-      <ul>
-        <li>Step 1 : Account</li>
-        <li>Step 2 : Personal Details</li>
-        <li>Step 3 : Your Review</li>
-      </ul>
-    </nav>
+<body class="form-page">
+<nav>
+  <ul>
+    <li class="completed">Step 1 : Account</li>
+    <li class="completed">Step 2 : Personal Details</li>
+    <li class="current">Step 3 : Your Review</li>
+  </ul>
+</nav>
 
     <form>
       <fieldset>
@@ -31,17 +32,26 @@
             </div>
 
 
-            <div>
-              <label for="visit">Would you visit again ?</label>
-           <input type="radio" id="yes" name="visit" value="yes">
-<label for="yes">Yes</label>
+          <div>
+<label>Would you visit again?</label>
 
-<input type="radio" id="no" name="visit" value="no">
-<label for="no">No</label>
+<div class="radio-group">
 
-<input type="radio" id="maybe" name="visit" value="maybe">
-<label for="maybe">Maybe</label>
-            </div>
+<label>
+<input type="radio" name="visit"> Yes
+</label>
+
+<label>
+<input type="radio" name="visit"> No
+</label>
+
+<label>
+<input type="radio" name="visit"> Maybe
+</label>
+
+</div>
+
+</div>
 
 
             <div>
@@ -57,13 +67,13 @@
                <input type="file" name="document">
             </div>
 
-               <div>
-          <input type="checkbox" name="signup" id="signup">
-<label for="signup">Sign me up for email updates</label>
-               </div>
+<div class="signup">
+    <input type="checkbox" name="signup" id="signup">
+    <label for="signup">Sign me up for email updates</label>
+</div>
          </div>
 
-        <div>
+   <div class="form-buttons">
           <a href="../pages/personal.html">
             <img src="../images/back.webp" alt="go back" />
           </a>

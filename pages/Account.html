@@ -1,69 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account Details
-    </title>
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Details</title>
+      <link rel="stylesheet" href="../style.css">
+  </head>
+<body class="form-page">
+<nav>
+  <ul>
+    <li class="current">Step 1 : Account</li>
+    <li class="next">Step 2 : Personal Details</li>
+    <li class="next">Step 3 : Your Review</li>
+  </ul>
+</nav>
 
-    <nav>
-        <ul>
-            <li>  Step 1 : Account </li>
-            <li> Step 2 : Personal Details</li>
-            <li>  Step 3 : Your Review</li>
-        </ul>
- 
-    </nav>
+    <form>
+      <fieldset>
+        <legend>Account</legend>
 
-    <form >
+        <div>
+          <div>
+            <label for="email">Email Address : </label>
+            <input
+              name="email"
+              id="email"
+              type="email"
+              placeholder="Enter Email"
+            />
+          </div>
 
-<fieldset>
-    
-    <legend>Account</legend>
+          <div>
+            <label for="password">Password : </label>
+            <input
+              name="password"
+              id="password"
+              type="password"
+              placeholder="Enter Password"
+            />
+          </div>
 
- <div>
-     <div>
-            <label  for="email">Email Address : </label>
-    <input name="email" id="email" type="email"  placeholder="Enter Email">
+          <div>
+            <label for="confirmpassword">Confirm Password : </label>
+            <input
+              name="confirmpassword"
+              id="confirmpassword"
+              type="password"
+              placeholder="Confirm  Password"
+            />
+          </div>
+        </div>
+<div class="form-buttons">
+          <a href="../index.html">
+            <img src="../images/back.webp" alt="go back" />
+          </a>
 
-     </div>
-
-
-     <div>
-
-    <label  for="password">Password : </label>
-    <input name="password" id="password" type="password"  placeholder="Enter Password">
-     </div>
-
-     <div>
-
-    <label for="confirmpassword">Confirm Password : </label>
-    <input  name="confirmpassword" id="confirmpassword" type="password"  placeholder="Confirm  Password">
-
-     </div>
-
-
- </div>
-
-   <div>
-      <a href="../index.html">
-        <img src="../images/back.webp" alt="go back">
-      </a>
-
-        <a href="../pages/personal.html">
-            <img src="../images/next.webp" alt="go to Personal details">
-        </a>
-   
-   </div>
-
-
-</fieldset>
-  
-
+          <a href="../pages/personal.html">
+            <img src="../images/next.webp" alt="go to Personal details" />
+          </a>
+        </div>
+      </fieldset>
     </form>
-
-</body>
+  </body>
 </html>

@@ -1,3 +1,254 @@
-body{
-   text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #111;
+}
+
+.home h1 {
+  margin: 50px auto 20px;
+  text-align: center;
+  color: #000;
+  font-size: 36px;
+}
+
+.home hr,
+.home .intro,
+.home h3,
+.home .sections,
+.home .start-text,
+.start-btn {
+  width: 90%;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home hr {
+  border: 0;
+  border-top: 2px solid #000;
+}
+
+.intro,
+.sections {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+.intro {
+  line-height: 1.7;
+  margin-top: 20px;
+}
+
+.home h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.sections {
+  padding-left: 40px;
+}
+
+.sections li {
+  margin: 10px 0;
+}
+
+.start-text {
+  text-align: center;
+  margin-top: 25px;
+  font-weight: bold;
+}
+
+.start-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.start-btn img {
+  width: 120px;
+  transition: 0.3s;
+}
+
+.start-btn img:hover {
+  transform: scale(1.08);
+}
+
+nav {
+  width: 90%;
+  max-width: 1000px;
+  margin: 35px auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav li {
+  padding: 14px 35px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: 1px solid #000;
+}
+
+.current {
+  background: #0066ff;
+  color: #fff;
+}
+
+.completed {
+  background: #16a34a;
+  color: #fff;
+}
+
+.next {
+  background: #777;
+  color: #fff;
+}
+
+
+.form-page form {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+}
+
+fieldset {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 12px;
+  padding: 35px;
+}
+
+legend {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+
+fieldset div:not(.form-buttons):not(.radio-group):not(.cnic-boxes):not(.signup) {
+  margin-bottom: 20px;
+}
+
+.signup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.signup label {
+  margin-bottom: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #fff;
+  color: #111;
+}
+
+textarea {
+  height: 120px;
+}
+
+
+.cnic-boxes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.cnic-boxes input {
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+.radio-group {
+  display: flex;
+  gap: 25px;
+}
+
+.radio-group label,
+.signup label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-weight: normal;
+}
+
+.radio-group input,
+.signup input {
+  width: 18px;
+  height: 18px;
+  accent-color: #000;
+}
+
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.form-buttons img {
+  width: 130px;
+}
+
+.form-buttons img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  nav li {
+    width: 100%;
+    text-align: center;
+  }
+
+  fieldset {
+    padding: 20px;
+  }
+
+  .radio-group {
+    flex-wrap: wrap;
+  }
+
+  .form-buttons img {
+    width: 90px;
+  }
 }
