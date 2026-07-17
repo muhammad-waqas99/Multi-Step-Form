@@ -32,19 +32,23 @@ The user can navigate through different steps and fill in the required informati
 
 ## Project Structure
 
+```text
 Multi-Step-Form/
 │
 ├── pages/
-│ ├── account.html
-│ ├── personal.html
-│ └── review.html
+│   ├── account.html
+│   ├── personal.html
+│   └── review.html
 │
 ├── images/
+│   ├── back.webp
+│   ├── next.webp
+│   └── arrow.webp
 │
 ├── index.html
 │
 └── style.css
-
+```
 
 
 ## Purpose
