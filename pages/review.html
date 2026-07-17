@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Review</title>
+</head>
+  <body>
+    <nav>
+      <ul>
+        <li>Step 1 : Account</li>
+        <li>Step 2 : Personal Details</li>
+        <li>Step 3 : Your Review</li>
+      </ul>
+    </nav>
+
+    <form>
+      <fieldset>
+        <legend>Your Review :</legend>
+
+         <div>
+
+            <div>
+                <p>How did you hear about us ?</p>
+              <select name="source" id="source">
+                    <option value="select your option">select your option</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="twitter">twitter</option>
+                </select>
+            </div>
+
+
+            <div>
+              <label for="visit">Would you visit again ?</label>
+           <input type="radio" id="yes" name="visit" value="yes">
+<label for="yes">Yes</label>
+
+<input type="radio" id="no" name="visit" value="no">
+<label for="no">No</label>
+
+<input type="radio" id="maybe" name="visit" value="maybe">
+<label for="maybe">Maybe</label>
+            </div>
+
+
+            <div>
+                <label for="comments">Comments : </label>
+
+                <textarea name="comments" id="comments"  placeholder="Enter your comments here"></textarea>
+            </div>
+
+
+            <div>
+                <label for="Documents">Documents : </label>
+
+               <input type="file" name="document">
+            </div>
+
+               <div>
+          <input type="checkbox" name="signup" id="signup">
+<label for="signup">Sign me up for email updates</label>
+               </div>
+         </div>
+
+        <div>
+          <a href="../pages/personal.html">
+            <img src="../images/back.webp" alt="go back" />
+          </a>
+
+<button type="submit">
+    <img src="../images/submit.webp" alt="submit button">
+</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
